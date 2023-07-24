@@ -1,42 +1,28 @@
 #include <iostream>
-
-class Shape {
+using namespace std;
+ 
+class base {
 public:
-    virtual void draw() {
-        std::cout << "Drawing a Shape." << std::endl;
+    void virtual print() {
+        cout << "print base class" << std::endl;
+        }
+};
+ 
+class derived : public base {
+public:
+    void print(){
+        cout << "print derived class" << std::endl;
     }
 };
-
-class Circle : public Shape {
-public:
-    void draw() override {
-        std::cout << "Drawing a Circle." << std::endl;
-    }
-};
-
-class Square : public Shape {
-public:
-    void draw() override {
-        std::cout << "Drawing a Square." << std::endl;
-    }
-};
-
-void    do_smt_shapes(Shape* sptr)
+ 
+int main()
 {
-    sptr->draw();
-}
-
-int main() {
-    Shape* shapePtr;
-
-    Circle circle;
-    Square square;
-
-    shapePtr = &circle;
-    shapePtr->draw();  // Calls the draw() method of Circle
-
-    shapePtr = &square;
-    shapePtr->draw();  // Calls the draw() method of Square
-
+    base* bptr;
+    derived d;
+    bptr = &d;
+ 
+    bptr->print();
     return 0;
 }
+
+
