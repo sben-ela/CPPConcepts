@@ -2,6 +2,11 @@
 using namespace std;
 
 
+
+//  ? Deleting a derived class object using a pointer of base class type that has a non-virtual
+//  ? destructor results in undefined behavior. To correct this situation, the base class 
+//  ? should be defined with a virtual destructor.
+
 class Super
 { 
         int x;
@@ -16,13 +21,6 @@ class Super
 };
 
 
-
-//
-/*/
-    iline func();//1
-    iline dfunc();//1
-
-*/
 class Sub: public Super
 {
         int y;
@@ -45,6 +43,7 @@ int main()
 {
     Super* ptr = new Sub();
     delete ptr;
+    // ! If the destructor is not Virtual, the program will perform a memory leak
     // system("leaks a.out");
 }
 

@@ -4,7 +4,7 @@ void Hello() {
     std::cout << "Hello from Hello!" << std::endl;
 }
  
-namespace Salah
+namespace sben_ela
 {
     namespace position{
         double  x;
@@ -16,7 +16,7 @@ namespace Salah
     }
     namespace functions{
         void Hello() {
-            std::cout << "Hello from namespace!" << std::endl;
+            std::cout << "Hello from sben-ela  namespace!" << std::endl;
             position::x = 10;
             position::y = 20;
             direction::dir_x = -1;
@@ -28,10 +28,10 @@ namespace Salah
 int main() {
 
     Hello();
-    Salah::functions::Hello();
-    std::cout << Salah::position::x << std::endl;
-    std::cout << Salah::position::y << std::endl;
-    std::cout << Salah::direction::dir_x << std::endl;
-    std::cout << Salah::direction::dir_y << std::endl;
+    sben_ela::functions::Hello();
+    std::cout << sben_ela::position::x << std::endl;
+    std::cout << sben_ela::position::y << std::endl;
+    std::cout << sben_ela::direction::dir_x << std::endl;
+    std::cout << sben_ela::direction::dir_y << std::endl;
     return 0;
 }

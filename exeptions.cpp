@@ -18,9 +18,7 @@ int main () {
       z = division(x, y);
       cout << z << endl;
    }
-//    catch (const char* msg) {
-//      cerr << msg << endl;
-//    }
+
    catch (...) {
      cerr << "Second " << endl;
    }

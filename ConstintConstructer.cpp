@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ConstintConstructer.cpp                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sben-ela <sben-ela@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/08/16 10:00:20 by sben-ela          #+#    #+#             */
+/*   Updated: 2023/08/16 11:02:01 by sben-ela         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include<iostream>
 using namespace std;
 
@@ -28,5 +40,4 @@ int main()
 }
 
 
-// ! Why the constructer must be take a const argument ?
 // ? https://www.geeksforgeeks.org/copy-constructor-argument-const/
