@@ -3,7 +3,8 @@ using namespace std;
 
 class Complex {
 private:
-	int real, imag;
+	int	real;
+	int	imag;
 
 public:
 	Complex(int r = 0, int i = 0)
@@ -24,6 +25,7 @@ public:
 		cout << "real : " << real << "\timg : " << imag << '\n';
 	}
 };
+
 
 int main()
 {
