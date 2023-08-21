@@ -4,6 +4,7 @@
 #include <iostream>
 using namespace std;
 
+
 int main()
 {
 	auto x = 4;
@@ -20,5 +21,5 @@ int main()
 		<< typeid(ptr).name() << endl
 		<< typeid(pptr).name() << endl;
 
-	return 0;
+	return (0);
 }
